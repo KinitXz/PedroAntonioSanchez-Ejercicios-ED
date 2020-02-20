@@ -1,0 +1,14 @@
+@startuml Ejercicio 4
+
+:Usuario:
+Usuario -- (Acceder)
+(Acceder) <.. (Registrarse):<<Extends>>
+Usuario -- (Ver cursos en los que esta matriculado)
+Usuario -- (Configurar su entorno)
+Usuario -- (Publicar en el foro)
+Usuario -- (Descargar material)
+Usuario -- (Entregar resultados)
+(Entregar resultados) <|-- (Subir archivos)
+(Entregar resultados) <|-- (Introducir texto)
+
+@enduml

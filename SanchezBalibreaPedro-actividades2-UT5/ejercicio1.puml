@@ -1,0 +1,8 @@
+@startuml Ejercicio1
+
+:Usuario:
+Usuario -> (Ver agenda) 
+(Ver agenda) ..> (Hacer llamada telefónica) :Extends
+(Ver agenda) ..> (Hacer videoconferencia) :Extends
+(Ver agenda) ..> (Escribir mensaje) :Extends
+@enduml

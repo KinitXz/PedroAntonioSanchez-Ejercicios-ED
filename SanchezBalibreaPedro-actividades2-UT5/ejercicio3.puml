@@ -1,0 +1,10 @@
+@startuml Ejercicio 3
+
+:Cliente:
+Cliente <-- (Realizar Operaciones)
+(Realizar Operaciones) <.. (Realizar transferencia):<<Extend>>
+(Realizar Operaciones) <.. (Realizar operacion en bolsa):<<Extend>>
+(Realizar transferencia) <.. (Notificar):<<Extend>>
+(Notificar) --> (Agente)
+
+@enduml

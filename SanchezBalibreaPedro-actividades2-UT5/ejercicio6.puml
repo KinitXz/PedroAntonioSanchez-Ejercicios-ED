@@ -1,0 +1,19 @@
+@startuml Ejercicio 6
+
+:Cliente:
+(Cliente)--(Acceder)
+(Acceder)<..(Realizar pedido):<<Extends>>
+(Acceder)<..(Devolver pedido):<<Extends>>
+(Acceder)<..(Cancelar pedido):<<Extends>>
+(Acceder)<..(Pedir producto):<<Extends>>
+(Acceder)<..(Pedir Informacion):<<Extends>>
+(Acceder)<..(Hacer reclamacion):<<Extends>>
+(Inventarios)..>(Realizar pedido):<<Extends>>
+(Devolver pedido)..>(Actualizar inventario):<<Include>>
+(Actualizar inventario)..>(Actualiza contabilidad):<<Include>>
+(Hacer reclamacion)..>(Resuelta):<<Include>>
+(Resuelta)<..(Consultar reclamacion):<<Extends>>
+(Hacer reclamacion)<..(Informe de reclamaciones):<<Extends>>
+Cliente -- (Consultar reclamacion)
+
+@enduml

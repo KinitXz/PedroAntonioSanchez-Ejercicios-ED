@@ -1,0 +1,10 @@
+El usuario tiene acceso a una plataforma de aprendizaje on-line, a través
+de esta plataforma el usuario podrá acceder a la plataforma iniciando
+sesión en caso de tener cuenta o registrarse en el caso de que no estuviese
+dado de alta.
+Además, podrá ver los cursos en los que está matriculado, configurar
+el entorno de la plataforma, consultar los cursos en los que está
+matriculado, publicar en el foro de la plataforma, descargar material
+de aprendizaje y entregar resultados de las tareas que tenga el usuario.
+En la entrega de resultados el usuario podrá realizar una subida de archivos
+a la plataforma o simplemente introducir texto.

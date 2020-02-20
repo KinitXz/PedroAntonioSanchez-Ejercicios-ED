@@ -1,0 +1,29 @@
+@startuml Ejercicio 5
+
+:Vendedor:
+:Comprador:
+Vendedor -- (Gestionar inmueble)
+(Gestionar inmueble) <.. (Añadir datos de inmueble):<<Extends>>
+(Añadir datos de inmueble) ..> (Buscar el inmueble):<<Include>>
+(Gestionar inmueble) <.. (Buscar el inmueble):<<Extends>>
+(Gestionar inmueble) <.. (Listar datos inmueble):<<Extends>>
+Vendedor -- (Realizar ventas)
+(Realizar ventas) <|-- (Venta cerrada)
+(Realizar ventas) <|-- (Venta negociandose)
+(Realizar ventas) <.. (Seleccionar agente):<<Extends>>
+Vendedor -- (Dar de baja)
+Vendedor -- (Consultar estado de venta)
+Comprador -- (Realizar compra)
+Comprador -- (Realizar oferta por inmueble)
+(Realizar oferta por inmueble) ..> (Notificar):<<Include>>
+(Notificar) <-- Vendedor
+Vendedor -- (Contraoferta)
+(Contraoferta) <.. (Notificacion):<<Include>>
+(Notificacion) -- Comprador
+Comprador -- (Llegar acuerdo)
+Vendedor -- (Llegar acuerdo)
+(Llegar acuerdo) <.. (Registrar acuerdo):<<Extends>>
+(Llegar acuerdo) <.. (Solicitar Prestamo):<<Extends>>
+(Solicitar Prestamo) <.. (Contactar entidad bancaria):<<Include>>
+
+@enduml
